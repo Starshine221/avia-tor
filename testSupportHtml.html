@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Window</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .support-window {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .support-window h2 {
+            margin-top: 0;
+        }
+
+        .support-window p {
+            color: #555;
+        }
+
+        .support-button {
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .support-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function openSupportLink() {
+            window.location.href = 'mailto:nav.ahmd.khan@gmail.com';
+        }
+    </script>
+</head>
+<body>
+    <div class="support-window">
+        <h2>Support</h2>
+        <p>If you have any questions or need assistance, please contact our support team.</p>
+        <button class="support-button" onclick="openSupportLink()">Contact Support</button>
+    </div>
+</body>
+</html>
